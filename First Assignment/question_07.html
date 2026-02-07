@@ -1,0 +1,99 @@
+Q7. Create employee registration webpage using HTML form objects
+
+
+<!doctype html>
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Employee Registration Form</h1>
+    <form>
+      <label for="Ms">Mr.</label>
+      <input type="radio" value="Mr" name="title" id="Mr" />
+      <label for="Mrs">Mrs.</label>
+      <input type="radio" value="Mrs" name="title" id="Mrs" />
+      <label for="Ms">Ms.</label>
+      <input type="radio" value="Ms" name="title" id="Ms" />
+
+      <br />
+
+      <label for="first_name">First Name</label>
+      <input type="text" id="first_name" placeholder="First Name" />
+
+      <br />
+
+      <label for="last_name">Last Name</label>
+      <input type="text" id="last_name" placeholder="Last Name" />
+
+      <br />
+
+      <label for="mail1">Mail Address 1</label>
+      <input type="text" id="mail1" />
+
+      <br />
+
+      <label for="mail2">Mail Address 2</label>
+      <input type="text" id="mail2" />
+
+      <br />
+
+      <label for="city">City</label>
+      <input type="text" id="city" />
+
+      <br />
+
+      <label for="state">State</label>
+      <select>
+        <option value="MP">MP</option>
+        <option value="UP">UP</option>
+      </select>
+
+      <br />
+
+      <label for="zip">ZIP</label>
+      <input type="number" id="zip" />
+
+      <br />
+
+      <label for="image">Upload Photo</label>
+      <input type="file" id="image" />
+
+      <br />
+
+      <label for="email">E-Mail</label>
+      <input type="email" id="email" />
+
+      <br />
+
+      <label for="mobile">Mobile</label>
+      <input type="number" id="mobile" placeholder="+91" />
+
+      <br />
+
+      <p>Languages Known</p>
+
+      <input type="checkbox" id="Gujarati" name="Gujarati" value="Gujarati" />
+      <label for="Gujarati">Gujarati</label>
+      <br />
+      <input type="checkbox" id="Hindi" name="Hindi" value="Hindi" />
+      <label for="Hindi">Hindi</label>
+      <br />
+      <input type="checkbox" id="English" name="English" value="English" />
+      <label for="English">English</label>
+      <br />
+      <input type="checkbox" id="Marathi" name="Marathi" value="Marathi" />
+      <label for="Marathi">Marathi</label>
+
+      <br />
+
+      <label for="info">Additional Information</label>
+      <textarea rows="5" placeholder="optional"></textarea>
+
+      <br />
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
