@@ -1,0 +1,38 @@
+//Q23. Write a JavaScript program to create a slideshow that changes the displayed image when a next or previous button is clicked.
+
+
+<!DOCTYPE HTML>
+<html>
+  <body>
+    <img id="slide" src="./img1.jfif" height="300" />
+
+    <br /><br />
+    <button onclick="prev()">--Previous</button>
+    <button onclick="next()">Next </button>
+
+    <script>
+      let images = [
+        "./img1.jfif",
+        "./img2.jfif",
+        "./img3.jfif",
+        "./img4.jfif",
+        "./img5.jfif",
+      ];
+      let index = 0;
+
+      function showImage() {
+        document.getElementById("slide").src = images[index];
+      }
+
+      function next() {
+        index = (index + 1) % images.length;
+        showImage();
+      }
+
+      function prev() {
+        index = (index - 1 + images.length) % images.length;
+        showImage();
+      }
+    </script>
+  </body>
+</html>
